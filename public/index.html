@@ -3,9 +3,27 @@
 <head>
 	<meta charset="utf-8">
 	<title>Service Worker Test</title>
+	<style>
+		body {
+			font-family: Helvetica, sans-serif;
+			text-align: center;
+		}
+		img {
+			max-width: 100%;
+			transition: all 0.5s;
+		}
+	</style>
 </head>
 
 <body>
 	<h1>Service Worker Test</h1>
+
+	<picture>
+		<source media="(min-width: 960px)" srcset="images/large.jpg">
+		<source media="(min-width: 600px)" srcset="images/medium.jpg">
+		<img src="images/small.jpg" alt="Cat image">
+	</picture>
+
+	<script src="app.js" async></script>
 </body>
 </html>
