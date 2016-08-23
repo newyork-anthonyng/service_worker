@@ -1,5 +1,7 @@
 window.onload = function() {
-	console.log('window loaded.');
+	alert('Hello World');
+
+	return;
 
 	if('serviceWorker' in navigator) {
 		navigator.serviceWorker.register('service-worker.js').then(function() {
